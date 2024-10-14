@@ -1,0 +1,161 @@
+/* GLOBAL*/
+@font-face {
+  font-family: Moderustic;
+  font-display: swap;
+  src: url("../fonts/Moderustic-Bold.woff2") format("woff2"), url("../fonts/Moderustic-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Moderustic;
+  font-display: swap;
+  src: url("../fonts/Moderustic-Regular.woff2") format("woff2"), url("../fonts/Moderustic-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: BriosoPro Italic;
+  font-display: swap;
+  src: url("../fonts/BriosoPro Italic.woff2") format("woff2"), url("../fonts/BriosoPro Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Moderustic;
+  font-display: swap;
+  src: url("../fonts/Moderustic-SemiBold.woff2") format("woff2"), url("../fonts/Moderustic-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Moderustic", "Arial", sans-serif;
+  background-color: #f9f8f3;
+  color: #000000;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+}
+
+body a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* BLOCKS */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+  padding: 30px 30px;
+}
+
+.header__logo:hover, .header__logo:focus-visible {
+  opacity: 0.5;
+}
+.header__logo:active {
+  opacity: 0.3;
+}
+
+.header__logo-img {
+  height: auto;
+}
+
+.burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 65px;
+  height: 65px;
+  cursor: crosshair;
+}
+
+.burger_squat-wrapper {
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  padding-left: 0;
+  display: flex;
+  position: relative;
+}
+
+.burger_squat {
+  border: 0.5px solid #63625b;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+}
+
+.squat-1 {
+  inset: 0% auto auto 0%;
+}
+
+.squat-2 {
+  inset: 0% 0% auto auto;
+}
+
+.squat-3 {
+  inset: auto auto 0% 0%;
+}
+
+.squat-4 {
+  inset: auto 0% 0% auto;
+}
+
+.main-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-button__link {
+  display: block;
+  padding: 15px 30px;
+  margin: 10px 0;
+  font-size: 18px;
+  color: #1565C0;
+  border: 2px solid #1565C0;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.main-button__link:hover {
+  background-color: #1565C0;
+  color: #fff;
+}
+
+.main-button--help {
+  width: 100%;
+}
+
+.container {
+  padding: 0 20px;
+}

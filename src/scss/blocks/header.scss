@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+  padding: 30px 30px;
+}
+
+.header__logo {
+  &:hover,
+  &:focus-visible {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.header__logo-img {
+  height: auto;
+}
+
+.burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 65px;
+  height: 65px;
+  cursor: crosshair;
+}
+
+
+.burger_squat-wrapper {
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  padding-left: 0;
+  display: flex;
+  position: relative;
+}
+
+.burger_squat {
+  border: .5px solid #63625b;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+}
+
+.squat-1 {
+  inset: 0% auto auto 0%;
+}
+
+.squat-2 {
+  inset: 0% 0% auto auto;
+}
+
+.squat-3 {
+  inset: auto auto 0% 0%;
+}
+
+.squat-4 {
+  inset: auto 0% 0% auto;
+}
